@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yabut River Resort - Cottages</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #f3f0ef;
+        color: #1a1a1a;
+    }
+
+    /* Header */
+    header {
+        background-color: #223f1f;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 30px;
+    }
+
+    header strong {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+    }
+
+    .location {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 14px;
+    }
+
+    /* Navigation bar */
+    nav {
+        background-color: #f3f0ef;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        padding: 15px 0;
+        font-size: 17px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #1a1a1a;
+        padding: 5px 18px;
+        border-radius: 20px;
+        transition: 0.3s;
+    }
+
+    nav a.active {
+        background-color: #223f1f;
+        color: white;
+    }
+
+    nav a:hover {
+        background-color: #4b7045;
+        color: white;
+    }
+
+    /* Banner Section */
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(70%);
+    }
+
+    .banner-text {
+        position: absolute;
+        bottom: 30px;
+        left: 60px;
+        color: white;
+        font-family: 'Playfair Display', serif;
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    /* Section Title */
+    .section-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        margin: 40px 90px 20px;
+    }
+
+    /* Cottage Cards */
+    .cottage-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 0 90px 50px;
+    }
+
+    .card {
+        background-color: white;
+        border: 1px solid #223f1f;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+        transition: 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .card-desc {
+        font-size: 13px;
+        color: #555;
+        margin-bottom: 10px;
+        min-height: 45px;
+    }
+
+    .price {
+        font-weight: bold;
+        font-size: 15px;
+        float: right;
+    }
+
+    .stars {
+        color: #f2c94c;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .view-btn {
+        display: inline-block;
+        background-color: #223f1f;
+        color: white;
+        padding: 6px 18px;
+        border: none;
+        border-radius: 20px;
+        font-size: 13px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .view-btn:hover {
+        background-color: #3d6b35;
+    }
+
+    @media (max-width: 768px) {
+        .banner-text {
+            font-size: 24px;
+            left: 20px;
+            bottom: 20px;
+        }
+
+        nav {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .section-title {
+            margin: 30px 30px 20px;
+        }
+
+        .cottage-grid {
+            padding: 0 30px 40px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <strong>Yabut River Resort</strong>
+    <div class="location">📍 Location: Calaca Batangas</div>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Rooms</a>
+    <a href="#" class="active">Cottage</a>
+    <a href="#">Activities</a>
+    <a href="#">Packages</a>
+</nav>
+
+<section class="banner">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" alt="Cottage Banner">
+    <div class="banner-text">
+        Cozy Cottages Surrounded by <br>
+        Nature’s Tranquility.
+    </div>
+</section>
+
+<h2 class="section-title">Available Cottages</h2>
+
+<section class="cottage-grid">
+    <!-- Cottage 1 -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Riverside Haven">
+        <div class="card-content">
+            <div class="card-title">Riverside Haven</div>
+            <div class="card-desc">A spacious forest-side sanctuary crafted for families, offering a peaceful retreat by the river with cozy interiors and nature-inspired design.</div>
+            <div>
+                <span class="stars">★ ★ ★ ★ ★</span>
+                <span class="price">₱ 12,000</span>
+            </div>
+            <button class="view-btn">View details</button>
+        </div>
+    </div>
+
+    <!-- Cottage 2 -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" alt="Big Family Room">
+        <div class="card-content">
+            <div class="card-title">Big Family Room</div>
+            <div class="card-desc">A spacious and cozy space ideal for family gatherings and relaxation. It’s perfect for bonding and unwinding in nature.</div>
+            <div>
+                <span class="stars">★ ★ ★ ★ ★</span>
+                <span class="price">₱ 12,000</span>
+            </div>
+            <button class="view-btn">View details</button>
+        </div>
+    </div>
+
+    <!-- Cottage 3 -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="Big Family Room">
+        <div class="card-content">
+            <div class="card-title">Big Family Room</div>
+            <div class="card-desc">A spacious and cozy space ideal for family gatherings and relaxation. It’s perfect for bonding and creating memories.</div>
+            <div>
+                <span class="stars">★ ★ ★ ★ ★</span>
+                <span class="price">₱ 12,000</span>
+            </div>
+            <button class="view-btn">View details</button>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
