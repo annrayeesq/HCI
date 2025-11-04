@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yabut River Resort - Profile Page</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f7f5f5;
+    }
+
+    /* Header */
+    header {
+        background-color: #223f1f;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+
+    header .location {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 15px;
+    }
+
+    /* Profile Section */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 50px 80px;
+    }
+
+    .profile {
+        flex: 1;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        background-color: #ddd;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    .back-btn {
+        border: 1px solid #000;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+        text-align: center;
+        line-height: 40px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    .profile label {
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .profile input {
+        border: none;
+        border-bottom: 1px solid #333;
+        background: none;
+        width: 250px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .profile input:focus {
+        outline: none;
+        border-bottom: 2px solid #223f1f;
+    }
+
+    .save-btn {
+        background-color: #223f1f;
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 20px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+    .save-btn:hover {
+        background-color: #3c6536;
+    }
+
+    /* Bookings Section */
+    .bookings {
+        background-color: #223f1f;
+        color: white;
+        border-radius: 20px;
+        width: 350px;
+        padding: 25px;
+    }
+
+    .bookings h2 {
+        margin: 0 0 10px 0;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .booking-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 12px 0;
+        font-size: 15px;
+    }
+
+    .status {
+        padding: 5px 12px;
+        border-radius: 15px;
+        font-size: 14px;
+    }
+
+    .paid {
+        background-color: #4a8f3b;
+        color: white;
+    }
+
+    .pending {
+        background-color: white;
+        color: #223f1f;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div><strong>Yabut River Resort</strong></div>
+    <div class="location">📍 Location: Calaca Batangas</div>
+</header>
+
+<div class="container">
+    <div class="profile">
+        <div class="back-btn">←</div>
+        <div class="profile-pic"></div>
+
+        <label>My profile</label>
+        <div style="display:flex; gap:20px;">
+            <input type="text" value="James Reid">
+            <input type="text" value="+56 956355367">
+        </div>
+        <input type="email" value="jamesreid@gmail.com"><br>
+        <button class="save-btn">Save</button>
+    </div>
+
+    <div class="bookings">
+        <h2>My bookings</h2>
+        <div class="booking-item">
+            <span>Family Package</span>
+            <span class="status pending">Pending</span>
+        </div>
+        <div class="booking-item">
+            <span>Boat Activity</span>
+            <span class="status paid">Paid</span>
+        </div>
+        <div class="booking-item">
+            <span>Parking</span>
+            <span class="status paid">Paid</span>
+        </div>
+        <div class="booking-item">
+            <span>Parking</span>
+            <span class="status pending">Pending</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
